@@ -13,12 +13,17 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body:const Center(
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.lightBlue,
-          size: 50.0,
-        ),
+      body: Center(
+        child: RaisedButton.icon(
+          onPressed: () {
+            print('You click mail me button');
+          },
+          icon: const Icon(
+            Icons.mail,
+          ),
+          label: const Text('Mail Me'),
+          color: Colors.amber,
+      ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
