@@ -9,16 +9,20 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My first app'),
+        title: const Text('My first app'),
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body:Center(
-        child: Image.asset('assets/girls2.jpg'),
+      body:const Center(
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightBlue,
+          size: 50.0,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Text('Click'),
+        child: const Text('Click'),
         backgroundColor: Colors.red[600],
       ),
     );
